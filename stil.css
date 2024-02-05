@@ -2,13 +2,13 @@
 
 body {
     margin: 0;
-    background-color: rgb(202, 202, 202);
+    background: radial-gradient(circle, #004D6B, #003449);
       /* Detta bestämmer hur bakrunden på hemsidan ska se ut */
   }
 
 
 .navbar {
-    background-color: #ffffff;
+    background: radial-gradient(circle, #004D6B, #003449);
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -25,10 +25,13 @@ img {
 }
 
 header {
-    background-color: rgba(202, 202, 202, 0.726);
-    padding: 20px;
+    background: radial-gradient(circle, #004D6B, #003449);
+    box-shadow: 0 5px 15px rgb(41, 41, 41);
+    padding: 50px;
     text-align: center;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
 
 nav ul {
@@ -44,9 +47,38 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
 }
+
+.welcometxt {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+   width: 450px;
+   height: 300px;
+   margin-top: 100px;
+   padding: 10px;
+   background-color: #001f2bce;
+   color: white;
+   border-radius: 2%;
+}
+
+
+
+
+
+
 
