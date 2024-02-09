@@ -73,36 +73,50 @@ header {
 }
 
 .introduction {
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #001f2b94;
-    width: auto;
-    max-width: 550px;
-    padding: 15px;
+    background-color: #003449;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 75px;
-    border-radius: 3%;
+    width: auto;
+    padding: 10px;
+    margin-top: 25px;
 }
 
-.container { /* Bestämmer layouten för allt inom <div class"container"> */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-.box {
-   width: 600px;
-   height: 300px;
-   padding: 10px;
-   background-color: #001f2b94;
-   color: white;
-   font-size: 22px;
-   border-radius: 2%;
-   /* Stilen för alla lådor som har taggen <div class"box"> i Index.html filen */
-}
+.leftcolumn {   
+    float: left;
+    width: 65%;
+  }
+
+.card {
+    background-color: #003449;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+.fakeimg {
+    background-color: #aaa;
+    width: auto;
+    padding: 20px;
+  }
+
+
+
+
+  
+  
+ 
+
+
+
+
+
+
 
 
 
