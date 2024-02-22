@@ -24,8 +24,32 @@
     </div>
 
     <header>
-      <h1>Contact me</h1>
+      <h1>Contact</h1>
     </header>
+
+    <form id="StorBox"> 
+      <h2>Contact Me</h2> 
+      <label>Name:</label> 
+      <input type="text" name="kundNamn"> 
+      
+      <br> 
+      <label>Email:</label>
+      <input type="email" name="kundMail" required>
+     
+      <br>
+      <label>Subject:</label>
+      <select name="arendeVal"> 
+        <option value="berom">Feedback</option>
+        <option value="forslag">Suggestions</option>
+        <option value="onsekmal">Questions</option>
+      </select>
+      <br>
+       <textarea name="meddelande" rows="5" cols="40" placeholder="Text goes here..."></textarea>
+      
+      <br><br>
+      <input type="submit" value="Send">
+    </form> 
+    
 
     <footer>
           <div class="quick-links">
