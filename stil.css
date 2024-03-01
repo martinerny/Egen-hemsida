@@ -9,7 +9,7 @@ body {
 
 
 .navbar {
-    background: radial-gradient(circle, #3e4041, #202020);
+    background: radial-gradient(circle, #373839, #202020);
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -46,15 +46,14 @@ img {
 }
 
 header {
-    background: radial-gradient(circle, #3e4041, #202020);
-    box-shadow: 0 5px 15px rgb(41, 41, 41);
-    padding: 50px;
-    text-align: center;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+  background: radial-gradient(circle, #3e404100, #20202000); /* Bakgrund för headerområdet */
+  box-shadow: 0 5px 15px rgb(41, 41, 41);
+  padding: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
 }
-
 
 .welcometxt { /* Välkomsmeddelande på första sidan */
     color: white;
@@ -71,7 +70,7 @@ header {
     height: auto;
     border: 2px solid white;
     border-radius: 80%;
-    padding: 4px;
+    padding: 2px;
 }
 
 .introduction {
@@ -88,12 +87,12 @@ header {
 
 .about {
   width: 20%;
-  background-color: #202020;
+  background-color: #202020b9;
   color: white;
   padding: 20px;
   margin-top: 50px;
   margin-right: 25px;
-  border: 1px solid gray;
+  border: 1px solid rgb(70, 70, 70);
   float: right;
   height: auto;
 }
@@ -112,8 +111,8 @@ h2 {
   }
 
 .card {
-    background-color: #202020;
-    border: 1px solid gray;
+    background-color: #202020b9;
+    border: 1px solid rgb(70, 70, 70);
     color: white;
     padding: 20px;
     margin-top: 50px;
@@ -152,6 +151,18 @@ h2 {
     max-width: 98%;
   }
 
+  p.CV {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #222222;
+    border-radius: 5%;
+  }
+
 
 footer { /* Footer längst ner på sidan */
     padding: 15px;
@@ -166,9 +177,10 @@ footer { /* Footer längst ner på sidan */
       text-decoration: none;
   }
 
-.quick-links { 
+.quick-links { /* Genvägar/Länkar i footer */
     flex: 0 1 30%;
     margin-bottom: 20px;
+    color: #8a8a8a;
 }
 
 .quick-links ul {
