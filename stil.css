@@ -10,7 +10,7 @@ body {
 
 .navbar {
     background: radial-gradient(circle, #373839, #202020);
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,9 +24,6 @@ nav ul {
     display: flex;
 }
 
-nav li { /* Mellanrum mellan "Home", "About" och "Contact" */
-    margin-right: 20px;
-}
 
 nav a {
     text-decoration: none;
@@ -34,6 +31,17 @@ nav a {
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
+    padding: 15px;
+}
+
+nav a:hover {
+  background-color: #3a3a3a;
+  color: #dadada;
+}
+
+nav a:active {
+  background-color: #3a3a3a;
+  color: #dadada;
 }
 
 
@@ -166,7 +174,8 @@ footer { /* Footer längst ner på sidan */
   }
 
 .quick-links { /* Genvägar/Länkar i footer */
-    flex: 0 1 30%;
+    display: inline-block;
+    margin-right: 25px;
     margin-bottom: 20px;
     color: #8a8a8a;
 }
@@ -178,6 +187,21 @@ footer { /* Footer längst ner på sidan */
 
 .quick-links ul li {
     margin-bottom: 5px;
+}
+
+.social-links {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #8a8a8a;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links ul li {
+  margin-bottom: 5px;
 }
 
 .legal {
