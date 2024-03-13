@@ -7,23 +7,25 @@ body {
       /* Detta bestämmer hur bakrunden på hemsidan ska se ut */
   }
 
-
-.navbar {
-    background: radial-gradient(circle, #373839, #202020);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-      /* 'Navigation bar' Längst upp på sidan */
-}
+  header {
+    background: radial-gradient(circle, #3e404100, #20202000); /* Bakgrund för headerområdet */
+    box-shadow: 0 5px 15px rgb(41, 41, 41);
+    padding: 25px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: flex;
 }
 
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
 
 nav a {
     text-decoration: none;
@@ -35,32 +37,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #3a3a3a;
-  color: #dadada;
-}
-
-nav a:active {
-  background-color: #3a3a3a;
-  color: #dadada;
-}
-
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    width: 30px;
-      /* Logga i 'navigation bar' */
-}
-
-header {
-  background: radial-gradient(circle, #3e404100, #20202000); /* Bakgrund för headerområdet */
-  box-shadow: 0 5px 15px rgb(41, 41, 41);
-  padding: 50px;
-  text-align: center;
+  background-color: #333333;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
 }
 
 .welcometxt { /* Välkomsmeddelande på första sidan */
@@ -79,18 +57,7 @@ header {
     border: 2px solid white;
     border-radius: 80%;
     padding: 2px;
-}
-
-.introduction {
-    background-color: #202020;
-    color: white;
-    border: 1px solid rgb(187, 187, 187);
-    font-size: 20px;
-    width: 50%;
-    padding: 5px;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
 }
 
 h2 {
@@ -105,13 +72,13 @@ h2 {
   .row {
     width: 40%;
   }
-
+ 
 .card {
     background-color: #202020b9;
     border: 1px solid rgb(70, 70, 70);
     color: white;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 25px;
     width: 100%;
   }
 
@@ -120,7 +87,7 @@ h2 {
     margin-bottom: 20px;
     padding: 10px;
     border: 2px solid rgb(223, 223, 223);
-    border-radius: 1%;
+    border-radius: 5%;
     background-color: #2c2c2c;
     width: 20%;
     min-width: 300px;
@@ -165,10 +132,10 @@ footer { /* Footer längst ner på sidan */
     text-align: center;
     background: #1b1b1b;
     color: rgb(255, 255, 255);
-    margin-top: 40px;
+    margin-top: 75px;
   }
 
-  footer a { /* Footer med <a> för att ändra utseende på länkarna i fottern */
+footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
       color: white;
       text-decoration: none;
   }
@@ -206,7 +173,6 @@ footer { /* Footer längst ner på sidan */
 
 .legal {
     text-align: center;
-    margin-top: 20px;
 }
 
 
