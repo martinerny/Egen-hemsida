@@ -7,7 +7,7 @@ body {
       /* Detta bestämmer hur bakrunden på hemsidan ska se ut */
   }
 
-  header {
+header {
     background: radial-gradient(circle, #3e404100, #20202000); /* Bakgrund för headerområdet */
     box-shadow: 0 5px 15px rgb(41, 41, 41);
     padding: 25px;
@@ -24,7 +24,6 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 5px;
 }
 
 nav a {
@@ -33,7 +32,7 @@ nav a {
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px;
 }
 
 nav a:hover {
@@ -65,11 +64,18 @@ h2 {
     font-weight: bold;
 }
 
+.gallery {
+  width: 100%;
+  height: auto;
+}
+
+
 .leftcolumn {   
     width: 100%;
+    margin-left: 25px;
   }
-  
-  .row {
+
+.row {
     width: 40%;
   }
  
@@ -77,12 +83,13 @@ h2 {
     background-color: #202020b9;
     border: 1px solid rgb(70, 70, 70);
     color: white;
-    padding: 20px;
-    margin-top: 25px;
+    padding: 15px;
+    margin-top: 50px;
     width: 100%;
   }
 
-  #ContactBox { 
+
+#ContactBox { 
     margin-top: 75px;
     margin-bottom: 20px;
     padding: 10px;
@@ -96,25 +103,25 @@ h2 {
     margin-right: auto;
   }
   
-  label { 
+label { 
     font-weight: bold;
   }
   
-  input[type="submit"] { /* Utseende för submit taggar. */
+input[type="submit"] { /* Utseende för submit taggar. */
     font-size: 20px;
   }
   
-  input { /* Alla Input taggar. */
+input { /* Alla Input taggar. */
     margin-bottom: 10px;
     max-width: 98%;
   }
   
-  textarea { /* stor textrutan. */ 
+textarea { /* stor textrutan. */ 
     margin-top: 10px;
     max-width: 98%;
   }
 
-  p.CV {
+p.CV {
     font-size: 20px;
     color: white;
     text-align: center;
@@ -132,7 +139,7 @@ footer { /* Footer längst ner på sidan */
     text-align: center;
     background: #1b1b1b;
     color: rgb(255, 255, 255);
-    margin-top: 75px;
+    margin-top: 100px;
   }
 
 footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
@@ -176,7 +183,17 @@ footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
 }
 
 
+@media only screen and (max-device-width: 375px) {
+  .leftcolumn {
+    margin-left: auto;
+    margin-right: auto;
+  }
   
+  .row {
+     width: 90%;
+  }
+
+}
 
 
 
