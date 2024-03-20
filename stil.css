@@ -65,21 +65,36 @@ h2 {
     font-weight: bold;
 }
 
-.leftcolumn {   
-    width: 100%;
-  }
+main {
+  display: flex;
+  justify-content: center;
+}
 
-.row {
-    width: 40%;
-  }
- 
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 25%;
+  margin: auto;
+}
+
+.center {   
+  width: 50%;
+  margin: auto;
+}
+
+
 .card {
     background-color: #202020b9;
     border: 2px solid rgb(255, 255, 255);
     color: white;
     padding: 15px;
     margin-top: 50px;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    box-sizing: border-box;
   }
 
   .Hobbies {
@@ -92,6 +107,20 @@ h2 {
     box-sizing: border-box;
   }
 
+.gallery {
+  width: 100%;
+  float: right;
+}
+
+  .gallery-img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .gallery-img img {
+    max-width: 100%;
+    height: auto;
+  }
 
 #ContactBox { 
     margin-top: 75px;
@@ -189,29 +218,16 @@ footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
 
 /* Media Query för iPhone 6/7/8 i Portrait Mode */
 @media only screen and (max-device-width: 375px) {
-  .leftcolumn {
-    margin-left: auto;
-    margin-right: auto;
-  }
+
+.center {
+  width: 100%;
   
-  .row {
-     width: 100%;
-  }
+}  
 
-  .card {
-    width: auto;
-    box-sizing: border-box;
-  }
+.card {
+  width: 100%;
+}
 
-  .Hobbies {
-    width: 100%;
-    height: auto;
-    border: 2px solid white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-  }
 }
 
 /* Media Query för iPhone 6/7/8 i Landscape Mode */
