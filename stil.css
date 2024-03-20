@@ -40,6 +40,7 @@ nav a:hover {
   color: #ffffff;
 }
 
+
 .welcometxt { /* Välkomsmeddelande på första sidan */
     color: white;
     font-size: 25px;
@@ -64,15 +65,8 @@ h2 {
     font-weight: bold;
 }
 
-.gallery {
-  width: 100%;
-  height: auto;
-}
-
-
 .leftcolumn {   
     width: 100%;
-    margin-left: 25px;
   }
 
 .row {
@@ -81,11 +75,21 @@ h2 {
  
 .card {
     background-color: #202020b9;
-    border: 1px solid rgb(70, 70, 70);
+    border: 2px solid rgb(255, 255, 255);
     color: white;
     padding: 15px;
     margin-top: 50px;
     width: 100%;
+  }
+
+  .Hobbies {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
   }
 
 
@@ -183,6 +187,7 @@ footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
 }
 
 
+/* Media Query för iPhone 6/7/8 i Portrait Mode */
 @media only screen and (max-device-width: 375px) {
   .leftcolumn {
     margin-left: auto;
@@ -190,17 +195,39 @@ footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
   }
   
   .row {
-     width: 90%;
+     width: 100%;
   }
+
+  .card {
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .Hobbies {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+/* Media Query för iPhone 6/7/8 i Landscape Mode */
+@media only screen and (max-device-width: 667px) and (orientation: landscape) {
 
 }
 
-
-
-
-
+/* Media Query för iPad i Portrait Mode */
+@media only screen and (max-device-width: 768px) {
   
+}
   
+/* Media Query för iPad i Landscape Mode */
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+  
+}
  
 
 
