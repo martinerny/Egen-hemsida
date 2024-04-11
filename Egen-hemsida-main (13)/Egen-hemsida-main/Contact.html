@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Martin EEDAT2 --> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin's Website</title>
+    <link rel="stylesheet" href="stil.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Contact</h1>
+
+      <nav>
+        <ul> <!-- "Unordered list" som fungerar som en navigationsmeny -->
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a class="Active" href="Contact.html">Contact</a></li>
+          <li><a href="CV.html">CV</a></li>
+      </ul>
+      </nav>
+      
+  </header>
+
+
+    <form id="ContactBox"> <!--Kontaktformulär-->
+      <h2>Contact Me</h2> 
+      <label>Name:</label> 
+      <input type="text" name="kundNamn"> 
+      
+      <br> 
+      <label>Email:</label>
+      <input type="email" name="kundMail" required>
+     
+      <br>
+      <label>Subject:</label>
+      <select name="arendeVal"> 
+        <option value="berom">Feedback</option>
+        <option value="forslag">Suggestions</option>
+        <option value="onsekmal">Questions</option>
+      </select>
+      <br>
+       <textarea name="meddelande" rows="5" cols="40" placeholder="Text goes here..."></textarea>
+      
+      <br><br>
+      <input type="submit" value="Send">
+    </form> 
+    
+
+    <footer>
+          <div class="quick-links">
+              <h4>Shortcuts</h4>
+              <ul>
+                  <li><a href="Index.html">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                  <li><a href="CV.html">CV</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="social-links">
+        <h4>Socials</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/martinerikssonnyberg/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.twitter.com/martinerny/" target="_blank">Twitter</a></li>
+          <li><a href="" target="_blank">Test</a></li>
+          <li><a href="" target="_blank">Test</a></li>
+        </ul>
+      </div>
+      <div class="legal">
+          <p>© 2024 Martin</p>
+      </div>
+  </footer>
+  </body>
+</html>
