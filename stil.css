@@ -2,6 +2,9 @@
 
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     background: radial-gradient(circle, #3e4041, #202020);
       /* Detta bestämmer hur bakrunden på hemsidan ska se ut */
@@ -40,6 +43,9 @@ nav a:hover {
   color: #ffffff;
 }
 
+nav a:active {
+  border-bottom: white;
+}
 
 .welcometxt { /* Välkomsmeddelande på första sidan */
     color: white;
@@ -63,64 +69,49 @@ nav a:hover {
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 main {
   display: flex;
-  justify-content: center;
 }
 
 .left {
   width: 25%;
 }
 
-.right {
-  width: 25%;
-  margin: auto;
-}
-
 .center {   
   width: 50%;
-  margin: auto;
+}
+
+.right {
+  width: 25%;
+}
+
+
+.rightIMG img {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 
 .card {
     background-color: #202020b9;
-    border: 2px solid rgb(255, 255, 255);
     color: white;
     padding: 15px;
     margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
     box-sizing: border-box;
+    border-radius: 5%;
+    min-width: 200px;
   }
 
-  .Hobbies {
-    width: 100%;
-    height: auto;
-    border: 2px solid white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-  }
-
-.gallery {
-  width: 100%;
-  float: right;
-}
-
-  .gallery-img {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .gallery-img img {
-    max-width: 100%;
-    height: auto;
-  }
 
 #ContactBox { 
     margin-top: 75px;
@@ -154,25 +145,17 @@ textarea { /* stor textrutan. */
     max-width: 98%;
   }
 
-p.CV {
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    background-color: #222222;
-    border-radius: 5%;
-  }
 
+.download-link {
+    display: none;
+}
 
 footer { /* Footer längst ner på sidan */
     padding: 15px;
     text-align: center;
     background: #1b1b1b;
     color: rgb(255, 255, 255);
-    margin-top: 100px;
+    margin-top: auto;
   }
 
 footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
@@ -219,30 +202,56 @@ footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
 /* Media Query för iPhone 6/7/8 i Portrait Mode */
 @media only screen and (max-device-width: 375px) {
 
-.center {
-  width: 100%;
+  main {
+    display: block;
+  }
   
-}  
+  .left, .center, .right {
+    width: 100%;
+  }
+    
+  .card {
+    width: 100%;
+    }
 
-.card {
-  width: 100%;
-}
+    object p {
+      color: white;
+    }
 
 }
 
 /* Media Query för iPhone 6/7/8 i Landscape Mode */
 @media only screen and (max-device-width: 667px) and (orientation: landscape) {
+  .left, .right {
+    width: 40%;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  object p {
+    color: white;
+  }
 
 }
 
 /* Media Query för iPad i Portrait Mode */
 @media only screen and (max-device-width: 768px) {
-  
+
+  object p {
+    color: white;
+  }
+
 }
   
 /* Media Query för iPad i Landscape Mode */
 @media only screen and (max-device-width: 1024px) and (orientation: landscape) {
   
+  object p {
+    color: white;
+  }
+
 }
  
 
