@@ -76,18 +76,15 @@ main {
   display: flex;
 }
 
-.left {
+.left, .right {
   width: 25%;
+  float: left;
 }
 
-.center {   
+.center {
   width: 50%;
+  float: left;
 }
-
-.right {
-  width: 25%;
-}
-
 
 .rightIMG img {
   width: 100%;
@@ -101,6 +98,7 @@ main {
 .card {
     background-color: #202020b9;
     color: white;
+    font-size: large;
     padding: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -222,34 +220,48 @@ footer a { /* Footer med <a> för att ändra utseende på länkarna i footern */
 
 /* Media Query för iPhone 6/7/8 i Landscape Mode */
 @media only screen and (max-device-width: 667px) and (orientation: landscape) {
-  .left, .right {
-    width: 40%;
-  }
+main {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-  .center {
-    width: 100%;
-  }
-
-  object p {
-    color: white;
-  }
+object p {
+  color: white;
+}
 
 }
 
 /* Media Query för iPad i Portrait Mode */
 @media only screen and (max-device-width: 768px) {
-
-  object p {
-    color: white;
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
+  .left, .center, .right {
+  width: 100%;
+  }
+
+.card {
+  margin-top: 20px;
+}
+
+object p {
+  color: white;
+}
 
 }
   
 /* Media Query för iPad i Landscape Mode */
 @media only screen and (max-device-width: 1024px) and (orientation: landscape) {
-  
-  object p {
-    color: white;
+
+
+.left, .center, .right {
+  width: 100%;
+}
+
+object p {
+  color: white;
   }
 
 }
