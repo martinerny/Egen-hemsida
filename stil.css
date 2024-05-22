@@ -7,8 +7,11 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: radial-gradient(circle, #3e4041, #202020);
+    color: white;
       /* Detta bestämmer hur bakrunden på hemsidan ska se ut */
   }
+
+
 
 header {
     background: radial-gradient(circle, #3e404100, #20202000); /* Bakgrund för headerområdet */
@@ -36,6 +39,7 @@ nav a {
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
+    color: inherit;
 }
 
 nav a:hover {
@@ -47,11 +51,17 @@ nav a:active {
   border-bottom: white;
 }
 
+#DateTime {
+  padding-left: 10px;
+  width: fit-content;
+}
+
 .welcometxt { /* Välkomsmeddelande på första sidan */
     color: white;
     font-size: 25px;
-    text-align: center;
-    margin-top: 75px;
+    align-self: center;
+    margin-top: 50px;
+    width: fit-content;
 }
 
 .me { /* Bild på mig på första sidan */
@@ -121,8 +131,7 @@ main {
     width: 20%;
     min-width: 300px;
     color: white;
-    margin-left: auto;
-    margin-right: auto;
+    align-self: center;
   }
   
 label { 
